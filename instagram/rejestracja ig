@@ -1,0 +1,190 @@
+{
+  "name": "rejestracjaig",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "XrNZW",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_account ",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "instagram_account_",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "instagram_account_",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "5"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "00d0ff",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Masz już konto**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_account",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "Stwórz konto",
+      "textInputs": [
+        {
+          "name": "Nazwa użytkownika",
+          "placeholder": "Wpisz swoją nazwę do rejestracji...",
+          "minLength": "0",
+          "maxLength": "20",
+          "id": "username",
+          "row": "",
+          "style": "SHORT",
+          "required": "true"
+        },
+        {
+          "name": "Hasło",
+          "placeholder": "Ustawi hasło do swojego konta...",
+          "minLength": "0",
+          "maxLength": "1000",
+          "id": "password",
+          "row": "",
+          "style": "SHORT",
+          "required": "true"
+        }
+      ],
+      "name": "Show Modal"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_username",
+      "changeType": "0",
+      "value": "tempVars(\"username\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_password",
+      "changeType": "0",
+      "value": "tempVars(\"password\")",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "C13584",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Pomyślnie utworzono konto. Na Twojego maila został przesłany mail.**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Rejestracja Instagram",
+          "url": "",
+          "color": "C13584",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Pomyślnie założono konto Instagram**\n\nPoniżej znajdziesz swoje dane do logowania oraz link aktywacyjny.\nNie udostępnia tych danych **nikomu**\n\n**Nazwa użytkownika:** ||${tempVars(\"username\")}||\n**Hasło:** ||${tempVars(\"password\")}||\n**Link aktywacyjny:** ||https://bit.ly/3bF1RJ6||",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "Zarejestruj się do Instagrama"
+}
