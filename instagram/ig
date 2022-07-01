@@ -1,0 +1,381 @@
+{
+  "name": "ig",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "YdfbI",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "current_channel_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "current_channel_id",
+      "comparison": "1",
+      "value": "ID-KANAŁU-KOMEND",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "5"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Komend możesz używać tylko na <#992450032450150410>**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_account",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "instagram_account_",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "phone",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "user_phone",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "user_phone",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "10"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Nie posiadasz telefonu**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "installed_ig",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ig_installed",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "ig_installed",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "14"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Nie zainstalowałeś aplikacji na swoim telefonie**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "user_instagram_account",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "instagram_account_",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "instagram_account_",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "18"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Przed umieszczeniem posta musisz się zarejestrować / zalogować.**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Wstaw posta",
+      "textInputs": [
+        {
+          "name": "Imię",
+          "placeholder": "Wpisz swoje imię...",
+          "minLength": "0",
+          "maxLength": "1000",
+          "id": "name",
+          "row": "",
+          "style": "SHORT",
+          "required": "true"
+        },
+        {
+          "name": "Opis",
+          "placeholder": "Wpisz opis posta...",
+          "minLength": "0",
+          "maxLength": "1000",
+          "id": "post_description",
+          "row": "",
+          "style": "PARAGRAPH",
+          "required": "true"
+        }
+      ],
+      "name": "Show Modal"
+    },
+    {
+      "channel": "103",
+      "varName": "ID-KANAŁU-INSTAGRAM",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "C13584",
+          "timestamp": "true",
+          "imageUrl": "${slashParams(\"Zdjecie\")}",
+          "thumbUrl": "",
+          "description": "**${tempVars(\"name\")}**: ${tempVars(\"post_description\")}",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "Instagram.com",
+          "footerIconUrl": "https://imgur.com/5ehw55D.png"
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "1",
+      "varName2": "post_message",
+      "name": "Send Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "00ff00",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "**Wstawiono post! Przeglądaj na <#992490280043421756>**",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "post_message",
+      "emoji": "4",
+      "varName2": "❤️",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "fromTarget": {
+        "_index": 1,
+        "message": "1",
+        "messageVarName": "post_message"
+      },
+      "threadName": "Sekcja komentarzy",
+      "autoArchiveDuration": "max",
+      "reason": "",
+      "storage": "0",
+      "storageVarName": "",
+      "name": "Create Thread"
+    }
+  ],
+  "comType": "4",
+  "description": "Wyślij wiadomość na Instagramie",
+  "parameters": [
+    {
+      "name": "Zdjecie",
+      "description": "Wrzuć zdjęcie na Instagrama",
+      "type": "ATTACHMENT",
+      "required": true,
+      "choices": null
+    }
+  ]
+}
